@@ -1,6 +1,6 @@
 const createBlock = async (w,l,h) => {
     const pt1 = await WSM.Geom.Point3d(0,0,0);
-    const pt2 = await WSM.Geom.Point3d(w,l,h);
+    const pt2 = await WSM.Geom.Point3d(2w,l,h);
     const histID = await FormIt.GroupEdit.GetEditingHistoryID();
     console.log(histID, pt1, pt2)
 
